@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Fecha objetivo: 1 de Noviembre de 2026 a las 8:00 PM (20:00:00)
-    const targetDate = new Date(2026, 10, 1, 20, 0, 0).getTime();
+    const targetDate = new Date(2026, 10, 29, 12, 18, 0).getTime();
 
     const daysEl = document.getElementById('days');
     const hoursEl = document.getElementById('hours');
