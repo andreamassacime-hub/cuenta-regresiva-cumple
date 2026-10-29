@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #ffe5ec 0%, #f0e6ff 50%, #e8f5e9 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.93);
+    border-radius: 30px;
+    padding: 35px 25px;
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(220, 170, 200, 0.3);
+    border: 3px solid #f8c8dc;
+    position: relative;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.cute-badge {
+    display: inline-block;
+    background-color: #ffd1dc;
+    color: #8b4367;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-family: 'Fredoka', cursive;
+    color: #6b4e71;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Caja de tiempo estilo cute pastel */
+.timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.time-box {
+    background-color: #f7d6e0;
+    border: 2px solid #f2b5d4;
+    border-radius: 18px;
+    padding: 12px 8px;
+    min-width: 75px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+}
+
+.time-box span {
+    font-family: 'Fredoka', cursive;
+    font-size: 1.8rem;
+    color: #5c3c54;
+    display: block;
+}
+
+.time-box p {
+    font-size: 0.75rem;
+    color: #886b80;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+.colon {
+    font-family: 'Fredoka', cursive;
+    font-size: 1.5rem;
+    color: #b5838d;
+}
+
+.subtitle {
+    color: #88748b;
+    font-size: 0.95rem;
+    margin-top: 15px;
+}
+
+/* Animación de corazones/elementos flotantes */
+.floating-hearts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    font-size: 1.6rem;
+}
+
+.floating-hearts span {
+    animation: bounce 2s infinite ease-in-out;
+}
+
+.floating-hearts span:nth-child(2) { animation-delay: 0.3s; }
+.floating-hearts span:nth-child(3) { animation-delay: 0.6s; }
+.floating-hearts span:nth-child(4) { animation-delay: 0.9s; }
+.floating-hearts span:nth-child(5) { animation-delay: 1.2s; }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+/* Estado del Día de Cumpleaños */
+.birthday-title {
+    color: #d47a9d;
+    font-size: 2rem;
+    animation: pulse 1.5s infinite alternate;
+}
+
+.image-wrapper {
+    margin: 20px 0;
+}
+
+.birthday-img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 20px;
+    border: 4px solid #f8c8dc;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.birthday-sub {
+    font-size: 1.2rem;
+    color: #7b5268;
+    font-weight: bold;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.04); }
+}

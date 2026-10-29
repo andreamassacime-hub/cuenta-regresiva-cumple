@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>benini fest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ESTADO 1: CUANTA REGRESIVA -->
+    <div id="countdownState" class="card">
+        <div class="cute-badge">mi amorsini :3</div>
+        <h1>tu pumpe será en:</h1>
+
+        <!-- Reloj Cute -->
+        <div class="timer-container">
+            <div class="time-box">
+                <span id="days">00</span>
+                <p>Días</p>
+            </div>
+            <div class="colon">:</div>
+            <div class="time-box">
+                <span id="hours">00</span>
+                <p>Horas</p>
+            </div>
+            <div class="colon">:</div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <p>Minutos</p>
+            </div>
+            <div class="colon">:</div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <p>Segundos</p>
+            </div>
+        </div>
+
+        <p class="subtitle"> que ya sea el día xfis, vence el 1 de nov a las 5 pm, me voy a enojar si no estás al pendiente Alberto </p>
+
+        <!-- Corazones Flotantes Animados -->
+        <div class="floating-hearts">
+            <span>🌸</span>
+            <span> 💖 </span>
+            <span>:3</span>
+            <span>🌸</span>
+            <span>💖</span>
+        </div>
+    </div>
+
+    <!-- ESTADO 2: LLEGÓ EL DÍA -->
+    <div id="birthdayState" class="card hidden">
+            <h1 class="birthday-title"> ¡¡¡¡¡FELIZ CUMPLE MI BENJIIIII!!!!!!!!!! </h1>
+        
+        <div class="image-wrapper">
+            <img src="gatito.jpg" alt="Gatito cumpleañero" class="birthday-img">
+        </div>
+
+        <p class="birthday-sub">Llegóó el momento de soplar la vela, tú eres el pastel jjjj</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
